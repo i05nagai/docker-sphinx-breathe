@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/i05nagai/docker-sphinx-breathe.svg?branch=master)](https://travis-ci.org/i05nagai/docker-sphinx-breathe)
+
 ## Overview
 
 * base image
