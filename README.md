@@ -11,6 +11,12 @@
 * breathe
     * 4.6.0
 
+
+* `sphinx-breathe:alpine-1.6.3`
+    * based on alpine
+* `sphinx-breathe:ubuntu-1.6.3`
+    * based on ubuntu
+
 ## Usage
 
 ```
@@ -18,10 +24,8 @@ cp Doxyfile project/
 ```
 
 ```
+cd alpine
 bash docker_run_gen_docs.sh
-```
-
-```
 bash docker_run_sphinx_build.sh
 ```
 
