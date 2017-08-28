@@ -19,12 +19,10 @@
 #
 import os
 import sys
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
+path_to_breathe = '/usr/local/lib/python3.6/site-packages/breathe/'
 path_to_this_dir = os.path.abspath(os.path.dirname(__file__))
-path_to_breathe = os.path.join(path_to_this_dir, "../breathe/")
 path_to_xml = os.path.join(path_to_this_dir, "../xml")
-path_to_source_files = os.path.join(path_to_this_dir, "../../src"),
-path_to_source_files = os.path.abspath(path_to_source_files)
 sys.path.insert(0, os.path.abspath(path_to_breathe))
 
 # breathe settings
@@ -32,15 +30,6 @@ breathe_projects = {
     "docker-sphinx-quickstart": os.path.abspath(path_to_xml)
 }
 breathe_default_project = "docker-sphinx-quickstart"
-list_of_files = []
-for root, subdirs, files in os.walk(path_to_source_files):
-    for filename in files:
-        list_of_files += os.path.join(root, filename)
-breathe_projects_source = {
-    "docker-sphinx-quickstart": (
-        path_to_source_files, list_of_files
-    )
-}
 
 # -- General configuration ------------------------------------------------
 
