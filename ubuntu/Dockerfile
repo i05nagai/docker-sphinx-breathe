@@ -6,6 +6,7 @@ RUN apt-get update \
     && apt-get install -y \
         graphviz \
         doxygen \
+        patch \
     && pip install \
         sphinx==1.6.3 \
         breathe==4.6.0 \
