@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --tag sphinx-breathe:alpine-1.6.3 .
+docker build --tag i05nagai/sphinx-breathe:alpine-1.6.3 .
